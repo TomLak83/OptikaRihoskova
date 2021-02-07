@@ -1,0 +1,67 @@
+﻿@model OptikaRihoskova.Models.Appointment
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Appointment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClientEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClientEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Optometrist)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Optometrist)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DurationMins)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DurationMins)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OptometristConfiremed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OptometristConfiremed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClientConfirmed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClientConfirmed)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
