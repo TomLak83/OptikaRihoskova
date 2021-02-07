@@ -51,7 +51,6 @@ namespace OptikaRihoskova.Controllers
         {
             if (ModelState.IsValid)
             {
-                appointment.Id = Guid.NewGuid();
                 db.Appointments.Add(appointment);
                 db.SaveChanges();
                 return RedirectToAction("Index");
